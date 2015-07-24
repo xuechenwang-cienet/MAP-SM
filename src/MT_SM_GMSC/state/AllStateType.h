@@ -1,0 +1,37 @@
+/*
+ * AllStateType.h
+ *
+ *  Created on: Jul 16, 2015
+ *      Author: git
+ */
+
+#ifndef ALLSTATETYPE_H_
+#define ALLSTATETYPE_H_
+
+#include <string>
+
+namespace IStateTyp {
+
+enum STATE_TYPE {
+    CHECK_CONFIRMATION,
+    CHECK_INDICATION,
+    MT_SM_DELIVERY_ATTEMPT_GMSC,
+    MT_SM_GMSC,
+    RECEIVE_OPEN_CNF,
+    REPORT_SM_DELIVERY_STAT_GMSC,
+    ST_NULL,
+    WAIT_FOR_FIRST_MT_SMS_CONIFIRM,
+    WAIT_FOR_INFORM_SC,
+    WAIT_FOR_MORE_MESSAGE_REMOTE_DELIVERY,
+    WAIT_FOR_OPEN_CNF,
+    WAIT_FOR_ROUTING_INFO,
+    MT_SM_TRANSFER_MSC,
+    WAIT_FOR_SUBSEQUENT_MT_SMS_CONFIRM,
+    STATE_TYPE_MAX,
+};
+
+std::string getIStateTypStr(STATE_TYPE type);
+
+}
+
+#endif /* ALLSTATETYPE_H_ */
